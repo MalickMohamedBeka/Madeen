@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Madeen",
+    "slug": "madeen-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo Madeen.png",
+    "scheme": "madeen-app",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/logo Madeen.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0D4A3A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.madeen.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Nous avons besoin de votre localisation pour calculer les horaires de prière et la direction de la Qibla.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Nous avons besoin de votre localisation pour calculer les horaires de prière et la direction de la Qibla.",
+        "NSMotionUsageDescription": "Nous utilisons le capteur de mouvement pour la boussole Qibla."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo Madeen.png",
+        "backgroundColor": "#0D4A3A"
+      },
+      "package": "com.madeen.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "VIBRATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/logo Madeen.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Nous avons besoin de votre localisation pour calculer les horaires de prière et la direction de la Qibla."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

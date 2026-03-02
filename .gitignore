@@ -1,0 +1,84 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# Debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+
+# OS
+.DS_Store
+*.pem
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Build
+build/
+android/
+ios/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Documentation temporaire (à supprimer avant commit)
+a faire.md
+AJOUTS_DUAS_ICONES.md
+CHANGEMENTS_FINAUX.md
+CORRECTIONS_FINALES.md
+DEVELOPPEMENTS_FINAUX.md
+DIAGNOSTIC_QIBLA.md
+GUIDE_QIBLA_AMELIORE.md
+GUIDE_TEST.md
+IMPLEMENTATION_GUIDE.md
+INTEGRATION_COMPLETE.md
+MIGRATION_CHECKLIST.md
+MODIFICATIONS_FINALES.md
+OU_TROUVER_QIBLA.md
+QIBLA_AMELIORATIONS.md
+RECAP_COMPLET.md
+RESUME_FINAL.md
+SONS_INSTALLES.md
+TODO.md
+TROUVER_QIBLA_SIMPLE.md
+USAGE_EXAMPLES.md
+create-logo.html
+logo-preview.html
+download-sounds.js
+download-sounds.ps1
+
+# Dossiers inutiles
+tabs/
+public/
