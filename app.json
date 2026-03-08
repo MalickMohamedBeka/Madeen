@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "Madeen",
+    "slug": "madeen-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo Madeen.png",
+    "scheme": "madeen-app",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/images/logo Madeen.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0D4A3A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.madeen.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Nous avons besoin de votre localisation pour calculer les horaires de prière et la direction de la Qibla.",
+        "NSMotionUsageDescription": "Nous utilisons le capteur de mouvement pour la boussole Qibla."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo Madeen.png",
+        "backgroundColor": "#0D4A3A"
+      },
+      "package": "com.madeen.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "VIBRATE",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/logo Madeen.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Nous avons besoin de votre localisation pour calculer les horaires de prière et la direction de la Qibla."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "ALADHAN_API_URL": "https://api.aladhan.com/v1",
+      "OPEN_METEO_API_URL": "https://api.open-meteo.com/v1",
+      "QURAN_API_URL": "https://api.quran.com/api/v4",
+      "MYMEMORY_API_URL": "https://api.mymemory.translated.net",
+      "NOMINATIM_API_URL": "https://nominatim.openstreetmap.org",
+      "NOMINATIM_USER_AGENT": "MadeenApp/1.0.0",
+      "APP_NAME": "Madeen",
+      "APP_VERSION": "1.0.0",
+      "NODE_ENV": "development",
+      "router": {},
+      "eas": {
+        "projectId": "7ad62926-9fad-4fbb-8056-3812ce07417e"
+      }
+    }
+  }
+}
